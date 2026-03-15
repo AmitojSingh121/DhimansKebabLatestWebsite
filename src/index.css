@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg2{
+     background: rgb(14 , 13 , 12);
+}
+
+.bg3{
+    background-image: repeating-linear-gradient(135deg , hsla(146 , 0% , 0% , 0.15)0px , hsla(146 , 0% , 0% , 0.15)0px);
+}
