@@ -6,8 +6,11 @@
   "author": "",
   "type": "commonjs",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-  "server": "nodemon server.js"
-  }
+ "scripts": {
+"start": "react-scripts start",
+"build": "react-scripts build",
+
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+}
 }

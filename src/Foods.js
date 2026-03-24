@@ -249,7 +249,7 @@ export const food_items = [
   paopitaprice: 4.50,          // WITHOUT COMBO
   comboPrice: 6.50,            // ✅ WITH COMBO (IMPORTANT)
 
-  DonerPrice: ":- €4.50",
+  DonerPrice: "€4.50",
 
   food_bebita: "Bebida + Batata frita",
   drinks: ["Coca-Cola 33cl", "Coca-Cola Zero 33cl", "Sumol Annanas 0.33cl", "Frutea Manga e Maracuja 33cl"],
@@ -275,7 +275,7 @@ export const food_items = [
 },
 
 {
-  "id": 26, "food_name": "Durum Kebab(Tortilla fina)","food_category": "Kebab", "paopitaprice": 5.00,  "DonerPrice":":- €5.00", "food_ingredient": "Combo Pack :- €7.00 " , "food_bebita":"Bebida + Batata frita", 
+  "id": 26, "food_name": "Durum Kebab(Tortilla fina)","food_category": "Kebab", "paopitaprice": 5.00,  "DonerPrice":"€5.00", "food_ingredient": "Combo Pack :- €7.00 " , "food_bebita":"Bebida + Batata frita", 
  "food_ingri":"Salada mix e Carne. Moliho de Aliho e Ketchup", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)", food_image: image2,
   ingredients: [
     "Pao / Pita",
@@ -289,25 +289,25 @@ export const food_items = [
   ],
 },
 
-{"id": 27, "food_name": "Pan Kebab","food_category": "Kebab", "paopitaprice": 5.60, "DonerPrice":":- €5.60" ,"food_ingredient": "Combo Pack :- €7.40" , "food_bebita":"Bebida + Batata frita", 
+{"id": 27, "food_name": "Pan Kebab","food_category": "Kebab", "paopitaprice": 5.60, "DonerPrice":"€5.60" ,"food_ingredient": "Combo Pack :- €7.40" , "food_bebita":"Bebida + Batata frita", 
  "food_ingri":"Salada mix e Carne. Moliho de Aliho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)", "food_image": image1 , "buttonn":"+"
 },
 
-{"id": 28, "food_name": "Doner Box (caixa pequena)","food_category": "Kebab", "paopitaprice": 4.50, "DonerPrice":":- €4.50" ,  "food_ingredient": "Combo Pack :- €5.60" , "food_bebita":"Bebida", 
+{"id": 28, "food_name": "Doner Box (caixa pequena)","food_category": "Kebab", "paopitaprice": 4.50, "DonerPrice":"€4.50" ,  "food_ingredient": "Combo Pack :- €5.60" , "food_bebita":"Bebida", 
  "food_ingri":"Carne e Batata Frita. Moliho de Aliho e Ketchup. Caixa peaceno", "food_image": image1 , "buttonn":"+"
 }, 
 
-{"id": 29, "food_name": " Prato Kebab","food_category": "Kebab", "paopitaprice": 6.50, "DonerPrice":":- €6.50" ,"food_ingredient": "Combo Pack :- €7.50" , "food_bebita":"Bebida", 
+{"id": 29, "food_name": " Prato Kebab","food_category": "Kebab", "paopitaprice": 6.50, "DonerPrice":"€6.50" ,"food_ingredient": "Combo Pack :- €7.50" , "food_bebita":"Bebida", 
 "food_bebita":"Bebida", 
  "food_ingri":"Salada mix e Carne. Moliho de Aliho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)","food_image": image1 , "buttonn":"+"
 },
 
-{"id": 30, "food_name": "Pizza Turca","food_category": "Kebab", "paopitaprice": 6.90, "DonerPrice":":- €6.90" , "food_ingredient": "Combo Pack :- €8.90" , "food_bebita":"Bebida + Batata frita", 
+{"id": 30, "food_name": "Pizza Turca","food_category": "Kebab", "paopitaprice": 6.90, "DonerPrice":"€6.90" , "food_ingredient": "Combo Pack :- €8.90" , "food_bebita":"Bebida + Batata frita", 
  "food_ingri":"Salada mix e Carne Vaca/Frango. Moliho de Aliho e Ketchup", 
  "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)","food_image": image1 , "buttonn":"+"
 },
 
-{"id": 31, "food_name": "Durum de Frango panado","food_category": "Kebab", "paopitaprice":5.00, "DonerPrice":":- €5.00" ,"food_ingredient": "Combo Pack :- €7.00" , "food_bebita":"Bebida + Batata frita", 
+{"id": 31, "food_name": "Durum de Frango panado","food_category": "Kebab", "paopitaprice":5.00, "DonerPrice":"€5.00" ,"food_ingredient": "Combo Pack :- €7.00" , "food_bebita":"Bebida + Batata frita", 
  "food_ingri":"Salada mix e Moliho de Aliho e Ketchup.", 
  "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)","food_image": image1 , "buttonn":"+"
 },
@@ -331,7 +331,7 @@ export const food_items = [
   food_name: "SALADA MISTA",
   food_category: "Saladas",
   paopitaprice: 4.00,
-  DonerPrice: ":- €4.00",
+  DonerPrice: "€4.00",
   ingredients: [
     "Alface",
     "Tomate",
@@ -343,171 +343,317 @@ export const food_items = [
 },
 
 {
-  id:33,
-  food_name:"SALADA CAPRICCIOSA",
+  id: 33,
+  food_name: "SALADA CAPRICCIOSA",
   food_category: "Saladas",
   paopitaprice: 4.50,
-  DonerPrice: ":- €4.50",
-  food_bebita:"(Alface, Tomate, pepino, queijo e fiambre)",
-    ingredients: [
+  DonerPrice: "€4.00",
+  ingredients: [
     "Alface",
     "Tomate",
     "Pepino",
-    "Milho",
-    "Cebola"
+    "Queijo ",
+    "Fiambre"
   ],
-  food_image:"image1"
+  food_image: image1
 },
 
 {
-  id:34,
-  food_name:"SALADA ATUM",
+  id: 34,
+  food_name: "SALADA ATUM",
   food_category: "Saladas",
   paopitaprice: 5.00,
-  DonerPrice: ":- €5.00",
-  food_bebita:"(Alface, Tomate, pepino, queijo e fiambre)",
-    ingredients: [
+  DonerPrice: "€5.00",
+  ingredients: [
     "Alface",
     "Tomate",
     "Pepino",
-    "Milho",
-    "Cebola"
+    "Cebola ",
+    "Atum"
   ],
-  food_image:"image1"
+  food_image: image1
 },
 
 {
-  id:35,
-  food_name:"SALADA CAMARÁO",
+  id: 35,
+  food_name: "SALADA CAMARÁO",
   food_category: "Saladas",
   paopitaprice: 5.80,
-  DonerPrice: ":- €5.80",
-  food_bebita:"(Alface, Tomate, pepino, queijo e fiambre)",
-    ingredients: [
+  DonerPrice: "€5.80",
+  ingredients: [
     "Alface",
     "Tomate",
     "Pepino",
-    "Milho",
-    "Cebola"
+    "ananas",
+    "milho",
+    "camarão",
+    "mozzarella"
   ],
-  food_image:"image1"
+  food_image: image1
 },
 
 {
-  id:36,
-  food_name:"SALADA DHIMAN'S",
+  id: 36,
+  food_name: "SALADA DHIMAN'S",
   food_category: "Saladas",
   paopitaprice: 6.00,
-  DonerPrice: ":- €6.00",
-  food_bebita:"(Alface, Tomate, pepino, queijo e fiambre)",
-    ingredients: [
+  DonerPrice: "€6.00",
+  ingredients: [
     "Alface",
     "Tomate",
     "Pepino",
-    "Milho",
-    "Cebola"
+    "ananas",
+    "kabab de frango",
+    "milho",
   ],
-  food_image:"image1"
+  food_image: image1
 },
-
 
 // Vegetarian
-{
-  id:37,
-  food_name:"Falafel Pao Pita",
-  food_category: "Vegitarian",
-  paopitaprice: 4.50,
-  DonerPrice: ":- €4.50",
-  food_bebita:"(Alface, Tomate, pepino, queijo e fiambre)",
-    ingredients: [
-    "Salada mix",
-    "Falafel Vegetariano",
-    "Molho de Alho e Ketchup",
-    "Alface",
-    "Cebola",
-    "Cenoura",
-    "Couve roxa",
-    "Tomate"
-  ],
-  food_image:"image1"
+{"id": 37, "food_name": "Falafel Pao Pita","food_category": "Vegitarian", "paopitaprice": 4.50, "comboPrice": 6.50, "DonerPrice":"€4.50", 
+  "food_ingri":"Salada mix, Falafel Vegetariano e Molho de Alho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)",  
+"food_ingredient": "Combo Pack :- €6.50" , "food_bebita":"Bebida + Batata frita", 
+ "food_image": image1,
+ "ingredients": ["Salada mix", "Falafel Vegetariano", "Molho de Alho", "Ketchup", "Alface", "Cebola", "Cenoura", "Couve roxa", "Tomate"],
 },
 
-// {"id": 38, "food_name": "Falafel Prato","food_category": "Vegitarian", "paopitaprice": 6.50, "DonerPrice":":- €6.50", 
-//   "food_ingri":"Salada mix, Falafel Vegetariano e Molho de Alho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)",  
-// "food_ingredient": "Combo Pack :- €7.50" , "food_bebita":"Bebida", 
-//  "food_image": image1 , "buttonn":"+"
-// },
-
-{
-  id:38,
-  food_name:"Falafel Pao Pita",
-  food_category: "Vegitarian",
-  paopitaprice: 6.50,
-  DonerPrice: ":- €6.50",
-  food_bebita:"(Alface, Tomate, pepino, queijo e fiambre)",
-    ingredients: [
-    "Alface",
-    "Tomate",
-    "Pepino",
-    "Milho",
-    "Cebola"
-  ],
-  food_image:"image1"
+{"id": 38, "food_name": "Falafel Prato","food_category": "Vegitarian", "paopitaprice": 6.50, "comboPrice": 7.50, "DonerPrice":"€6.50", 
+  "food_ingri":"Salada mix, Falafel Vegetariano e Molho de Alho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)",  
+"food_ingredient": "Combo Pack :- €7.50" , "food_bebita":"Bebida", 
+ "food_image": image1, "buttonn":"+",
+ "ingredients": ["Salada mix", "Falafel Vegetariano", "Molho de Alho", "Ketchup", "Alface", "Cebola", "Cenoura", "Couve roxa", "Tomate"],
 },
 
-{
-  id:39,
-  food_name:"Falafel Durum Tortilla",
-  food_category: "Vegitarian",
-  paopitaprice: 5.00,
-  DonerPrice: ":- €5.00",
-  food_bebita:"(Alface, Tomate, pepino, queijo e fiambre)",
-    ingredients: [
-    "Alface",
-    "Tomate",
-    "Pepino",
-    "Milho",
-    "Cebola"
-  ],
-  food_image:"image1"
-},
-
-{"id": 39, "food_name": "Falafel Durum Tortilla","food_category": "Vegitarian", "paopitaprice": 5.00 , "DonerPrice":":- €5.00", 
+{"id": 39, "food_name": "Falafel Durum Tortilla","food_category": "Vegitarian", "paopitaprice": 5.00, "comboPrice": 7.00, "DonerPrice":"€5.00", 
   "food_ingri":"Salada mix, Falafel Vegetariano e Molho de Alho e Ketchup", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)",  
-"food_ingredient": "Combo Pack :- - €7.00" , "food_bebita":"Bebida", 
- "food_image": image1 , "buttonn":"+"
+"food_ingredient": "Combo Pack :- €7.00" , "food_bebita":"Bebida + Batata frita", 
+ "food_image": image1, "buttonn":"+",
+ "ingredients": ["Salada mix", "Falafel Vegetariano", "Molho de Alho", "Ketchup", "Alface", "Cebola", "Cenoura", "Couve roxa", "Tomate"],
 },
 // Deserts
+{
+  id: 40,
+  food_name: "NATA/CHOCOLATE",
+  food_category: "Deserts",
+  paopitaprice: 2.00,
+  DonerPrice: "€2.00",
+  food_image: image1
+},
 
-{"id": 40, "food_name": "NATA/CHOCOLATE","food_category": "Deserts", "paopitaprice": 2.00, "DonerPrice":":- €2.00",
+{"id": 41, "food_name": " CREMA PISTACCHIO","food_category": "Deserts", "paopitaprice": 2.00, "DonerPrice":"€2.00", 
  "food_image": image1 
 },
 
-{"id": 41, "food_name": " CREMA PISTACCHIO","food_category": "Deserts", "paopitaprice": 2.00, "DonerPrice":":- €2.00", 
- "food_image": image1 
-},
 
-
-{"id": 42, "food_name": " CAFÉ ","food_category": "Deserts", "paopitaprice": 2.00 , "DonerPrice":":- €2.00",
+{"id": 42, "food_name": " CAFÉ ","food_category": "Deserts", "paopitaprice": 2.00 , "DonerPrice":"€2.00",
  "food_image": image1 , 
  
 },
 //  Snacks 
-{"id": 43, "food_name": "Nuggets De Frango 6 Und","food_category": "Snacks", "paopitaprice": 4.20 , "DonerPrice":":- €4.20", 
+{"id": 43, "food_name": "Nuggets De Frango 6 Und","food_category": "Snacks", "paopitaprice": 4.20 , "DonerPrice":"€4.20", 
  "food_image": image1 },
 
-{"id": 44, "food_name": "Chicken Fingers 5pcs","food_category": "Snacks", "paopitaprice": 4.30, "DonerPrice":":- €4.30",
+{"id": 44, "food_name": "Chicken Fingers 5pcs","food_category": "Snacks", "paopitaprice": 4.30, "DonerPrice":"€4.30",
  "food_image": image1 , 
 },
 
 // Pizza Seekh Kebab 
- {"id": 45, "food_name": "LAMB SEEKH PIZZA", "food_category": "Pizza Seekh Kebab", "food_ingredient": "Kebab Souse, Oregano, Mozzarella, Seekh Kebab Lamb, Pimento Fresco e Cebola Roxa.", "food_image": image1, "food_sizes":"Sizes", 
-    "food_prices":"Prices", "food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", "myMiniFood_price": "€9.00" ,"myMediaFood_price ": "€12.50", "btn":"+"
+ {"id": 45, "food_name": "LAMB SEEKH PIZZA", food_category: "Pizza Seekh Kebab", 
+food_ingredient: "Kebab Souse, Oregano, Mozzarella, Seekh Kebab Lamb, Pimento Fresco e Cebola Roxa.", 
+"food_image": image1, "food_sizes":"Sizes", "food_prices":"Prices", 
+"food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", 
+"myMiniFood_price": "€9.00", "myMediaFood_price ": "€12.50", "btn":"+",
+ingredientsBySize: {
+  Mini: ["Kebab Sauce", "Oregano", "Mozzarella", "Seekh Kebab Lamb", "Pimento Fresco", "Cebola Roxa"],
+  Media: ["Kebab Sauce", "Oregano", "Mozzarella", "Seekh Kebab Lamb", "Pimento Fresco", "Cebola Roxa"],
+},
 },
 
-{"id": 46, "food_name": " FRANGO SEEKH PIZZA", "food_category": "Pizza Seekh Kebab", "food_ingredient": "Kebab Souse, Oregano, Mozzarella, Seekh Kebab Frango, Pimento Fresco e Cebola Roxa.", "food_image": image1, "food_sizes":"Sizes", 
-  "food_prices":"Prices", "food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", "myMiniFood_price": "€9.00" ,"myMediaFood_price ": "€12.50","btn":"+"
+{"id": 46, "food_name": "FRANGO SEEKH PIZZA", "food_category": "Pizza Seekh Kebab", 
+"food_ingredient": "Kebab Souse, Oregano, Mozzarella, Seekh Kebab Frango, Pimento Fresco e Cebola Roxa.", 
+"food_image": image1, "food_sizes":"Sizes", "food_prices":"Prices", 
+"food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", 
+"myMiniFood_price": "€9.00", "myMediaFood_price ": "€12.50", "btn":"+",
+ingredientsBySize: {
+  Mini: ["Kebab Sauce", "Oregano", "Mozzarella", "Seekh Kebab Frango", "Pimento Fresco", "Cebola Roxa"],
+  Media: ["Kebab Sauce", "Oregano", "Mozzarella", "Seekh Kebab Frango", "Pimento Fresco", "Cebola Roxa"],
 },
+},
+
+ // ═══════════════════════════════════════════
+// CREAMY PIZZA CATUPIRY — All 24 items
+// ═══════════════════════════════════════════
+{ id: 47, food_name: "Pizza Margarita", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Molho de Tomate, Queijo Cremoso Catupiry, Mozzarella e Oregao",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€7.10", "myMediaFood_price ": "€9.70", myMaxiFood_price: "€16.90", myPartyFood_price: "€26.00", btn: "+",
+  ingredientsBySize: { Mini: ["Molho de Tomate","Queijo Cremoso Catupiry","Mozzarella","Oregao"], Media: ["Molho de Tomate","Queijo Cremoso Catupiry","Mozzarella","Oregao"], Maxi: ["Molho de Tomate","Queijo Cremoso Catupiry","Mozzarella","Oregao"], Party: ["Molho de Tomate","Queijo Cremoso Catupiry","Mozzarella","Oregao"] }
+},
+{ id: 48, food_name: "Pizza Fiambre", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao e Fiambre",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€7.60", "myMediaFood_price ": "€10.10", myMaxiFood_price: "€18.30", myPartyFood_price: "€27.40", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre"] }
+},
+{ id: 49, food_name: "Pizza Salame", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao e Salame",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€7.70", "myMediaFood_price ": "€11.10", myMaxiFood_price: "€18.40", myPartyFood_price: "€27.50", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Salame"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Salame"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Salame"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Salame"] }
+},
+{ id: 50, food_name: "Pizza Capriciosa", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Fiambre e Cogumelos",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€7.90", "myMediaFood_price ": "€11.10", myMaxiFood_price: "€18.70", myPartyFood_price: "€27.50", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Cogumelos"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Cogumelos"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Cogumelos"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Cogumelos"] }
+},
+{ id: 51, food_name: "Pizza Hawai", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Fiambre e Ananàs",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€7.90", "myMediaFood_price ": "€11.10", myMaxiFood_price: "€18.80", myPartyFood_price: "€28.00", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Ananás"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Ananás"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Ananás"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Ananás"] }
+},
+{ id: 52, food_name: "Pizza Solomia", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Fiambre, Pimenta Fresca e Cogumelos",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€7.90", "myMediaFood_price ": "€11.20", myMaxiFood_price: "€19.30", myPartyFood_price: "€28.50", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Pimenta Fresca","Cogumelos"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Pimenta Fresca","Cogumelos"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Pimenta Fresca","Cogumelos"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Pimenta Fresca","Cogumelos"] }
+},
+{ id: 53, food_name: "Pizza Atum", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Atum e Cebola Roxa",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€7.90", "myMediaFood_price ": "€11.20", myMaxiFood_price: "€18.40", myPartyFood_price: "€27.50", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Atum","Cebola Roxa"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Atum","Cebola Roxa"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Atum","Cebola Roxa"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Atum","Cebola Roxa"] }
+},
+{ id: 54, food_name: "Pizza Vegetariana", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Alho, Broculos, Pimentos, Cogumelos e Cebola Roxa",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€8.10", "myMediaFood_price ": "€11.70", myMaxiFood_price: "€19.40", myPartyFood_price: "€29.00", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Alho","Brócolos","Pimentos","Cogumelos","Cebola Roxa"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Alho","Brócolos","Pimentos","Cogumelos","Cebola Roxa"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Alho","Brócolos","Pimentos","Cogumelos","Cebola Roxa"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Alho","Brócolos","Pimentos","Cogumelos","Cebola Roxa"] }
+},
+{ id: 55, food_name: "Pizza Romana", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Fiambre, Chourico, Cogumelos e Ovo",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€8.10", "myMediaFood_price ": "€12.10", myMaxiFood_price: "€19.80", myPartyFood_price: "€30.50", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Chouriço","Cogumelos","Ovo"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Chouriço","Cogumelos","Ovo"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Chouriço","Cogumelos","Ovo"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Chouriço","Cogumelos","Ovo"] }
+},
+{ id: 56, food_name: "Pizza Mamamia", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Fiambre, Chourico, Salsicha e Ovo",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  "myMediaFood_price ": "€12.20", myMaxiFood_price: "€19.70", myPartyFood_price: "€31.50", btn: "+",
+  ingredientsBySize: { Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Chouriço","Salsicha","Ovo"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Chouriço","Salsicha","Ovo"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Chouriço","Salsicha","Ovo"] }
+},
+{ id: 57, food_name: "Pizza Quatro Estações", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Fiambre, Becon, Azeitonas e Cogumelos",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  "myMediaFood_price ": "€12.20", myMaxiFood_price: "€19.90", myPartyFood_price: "€33.00", btn: "+",
+  ingredientsBySize: { Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Bacon","Azeitonas","Cogumelos"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Bacon","Azeitonas","Cogumelos"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Bacon","Azeitonas","Cogumelos"] }
+},
+{ id: 58, food_name: "Pizza Napoli", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Fiambre, Ovo, Espinafres e Cogumelos",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  "myMediaFood_price ": "€12.10", myMaxiFood_price: "€17.90", myPartyFood_price: "€32.50", btn: "+",
+  ingredientsBySize: { Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Espinafres","Cogumelos","Ovo"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Espinafres","Cogumelos","Ovo"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Espinafres","Cogumelos","Ovo"] }
+},
+{ id: 59, food_name: "Pizza Tropical", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Fiambre, Ananàs e Camarão",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  "myMediaFood_price ": "€13.10", myMaxiFood_price: "€20.40", myPartyFood_price: "€33.50", btn: "+",
+  ingredientsBySize: { Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Ananás","Camarão"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Ananás","Camarão"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Ananás","Camarão"] }
+},
+{ id: 60, food_name: "Pizza Brasil", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Kebab de Frango, Becon e Milho",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€8.10", "myMediaFood_price ": "€12.20", myMaxiFood_price: "€20.90", myPartyFood_price: "€34.00", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Frango","Bacon","Milho"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Frango","Bacon","Milho"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Frango","Bacon","Milho"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Frango","Bacon","Milho"] }
+},
+{ id: 61, food_name: "Pizza Fantasia", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Salame, Fiambre, Cogumelos e Pimento Fresco",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  "myMediaFood_price ": "€12.70", myMaxiFood_price: "€20.40", myPartyFood_price: "€34.50", btn: "+",
+  ingredientsBySize: { Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Salame","Fiambre","Cogumelos","Pimento Fresco"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Salame","Fiambre","Cogumelos","Pimento Fresco"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Salame","Fiambre","Cogumelos","Pimento Fresco"] }
+},
+{ id: 62, food_name: "Pizza Roma", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Kebab de Frango, Becon e Cogumelos",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€8.10", "myMediaFood_price ": "€12.20", myMaxiFood_price: "€19.00", myPartyFood_price: "€32.00", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Frango","Bacon","Cogumelos"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Frango","Bacon","Cogumelos"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Frango","Bacon","Cogumelos"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Frango","Bacon","Cogumelos"] }
+},
+{ id: 63, food_name: "Pizza Kebab De Vaca", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Kebab de Vaca e Cebola Roxa",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€8.10", "myMediaFood_price ": "€11.70", myMaxiFood_price: "€19.90", myPartyFood_price: "€34.00", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Vaca","Cebola Roxa"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Vaca","Cebola Roxa"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Vaca","Cebola Roxa"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Vaca","Cebola Roxa"] }
+},
+{ id: 64, food_name: "Pizza Peperonni", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Pepperoni, Cogumelos e Azeitonas",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€7.90", "myMediaFood_price ": "€12.00", myMaxiFood_price: "€20.80", myPartyFood_price: "€35.00", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Pepperoni","Cogumelos","Azeitonas"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Pepperoni","Cogumelos","Azeitonas"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Pepperoni","Cogumelos","Azeitonas"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Pepperoni","Cogumelos","Azeitonas"] }
+},
+{ id: 65, food_name: "Pizza Calzone (Fechade)", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Fiambre, Cogumelos, Salame, Chourico e Pimentos (fechade)",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)",
+  "myMediaFood_price ": "€12.70", myMaxiFood_price: "€20.90", btn: "+",
+  ingredientsBySize: { Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Cogumelos","Salame","Chouriço","Pimentos (fechados)"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Fiambre","Cogumelos","Salame","Chouriço","Pimentos (fechados)"] }
+},
+{ id: 66, food_name: "Pizza Frutos do Mar", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Delicias do Mar e Ananás",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€7.90", "myMediaFood_price ": "€12.70", myMaxiFood_price: "€19.80", myPartyFood_price: "€34.50", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Delícias do Mar","Ananás"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Delícias do Mar","Ananás"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Delícias do Mar","Ananás"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Delícias do Mar","Ananás"] }
+},
+{ id: 67, food_name: "Pizza Dhiman's Kebab", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Queijo Cremoso Catupiry, Mozzarella, Molho de Tomate, Oregao, Kebab de Frango, Atum, Cogumelos, Cebola Roxa, Pimenta Branca",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€8.40", "myMediaFood_price ": "€13.10", myMaxiFood_price: "€21.80", myPartyFood_price: "€37.00", btn: "+",
+  ingredientsBySize: { Mini: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Frango","Atum","Cogumelos","Cebola Roxa","Pimenta Branca"], Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Frango","Atum","Cogumelos","Cebola Roxa","Pimenta Branca"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Frango","Atum","Cogumelos","Cebola Roxa","Pimenta Branca"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","Kebab de Frango","Atum","Cogumelos","Cebola Roxa","Pimenta Branca"] }
+},
+{ id: 68, food_name: "Pizza Especial", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Molho de Tomate, Oregao, Mozzarella, Queijo Cremoso Catupiry + 4 ingredients à escolha",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  "myMediaFood_price ": "€13.70", myMaxiFood_price: "€23.40", myPartyFood_price: "€38.50", btn: "+",
+  ingredientsBySize: { Media: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","+ 4 à escolha"], Maxi: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","+ 4 à escolha"], Party: ["Queijo Cremoso Catupiry","Mozzarella","Molho de Tomate","Oregao","+ 4 à escolha"] }
+},
+{ id: 69, food_name: "Calabresa - sabor do Brasil", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Molho de Tomate, Mozzarella, Calabresa Brasileira, Cebola Roxa, Azeitonas e Orégãos",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€8.90", "myMediaFood_price ": "€13.10", myMaxiFood_price: "€21.40", myPartyFood_price: "€35.50", btn: "+",
+  ingredientsBySize: { Mini: ["Mozzarella","Molho de Tomate","Orégao","Calabresa Brasileira","Cebola Roxa","Azeitonas"], Media: ["Mozzarella","Molho de Tomate","Orégao","Calabresa Brasileira","Cebola Roxa","Azeitonas"], Maxi: ["Mozzarella","Molho de Tomate","Orégao","Calabresa Brasileira","Cebola Roxa","Azeitonas"], Party: ["Mozzarella","Molho de Tomate","Orégao","Calabresa Brasileira","Cebola Roxa","Azeitonas"] }
+},
+{ 
+  id: 70, food_name: "Pizza Tandoori Frango", food_category: "Creamy Pizza Catupiry",
+  food_ingredient: "Molho de Tomate, Mozzarella, Pimenta Fresco, Cebola Roxa, Tandoori Frango e Oregão",
+  food_image: image1, food_sizes: "Sizes", food_prices: "Prices",
+  food_MiniPrice: "Mini(24 cm)", food_MediaPrice: "Média(30 cm)", food_MaxiPrice: "Maxi(50 cm)", food_PartyPrice: "Party(60 cm)",
+  myMiniFood_price: "€8.10", "myMediaFood_price ": "€12.70", myMaxiFood_price: "€20.90", myPartyFood_price: "€34.00", btn: "+",
+  ingredientsBySize: { Mini: ["Mozzarella","Molho de Tomate","Orégao","Pimenta Fresca","Cebola Roxa","Frango Tandoori"], Media: ["Mozzarella","Molho de Tomate","Orégano","Pimenta Fresca","Cebola Roxa","Frango Tandoori"], Maxi: ["Mozzarella","Molho de Tomate","Orégao","Pimenta Fresca","Cebola Roxa","Frango Tandoori"], Party: ["Mozzarella","Molho de Tomate","Orégao","Pimenta Fresca","Cebola Roxa","Frango Tandoori"] }
+  
+},
+
 ];
 
 
