@@ -594,7 +594,7 @@ function Menu() {
 
   return (
     <div className="bg-[#0d0d0d] min-h-screen pt-[72px]">
-
+      
       {/* Toast */}
       <ToastContainer theme="dark" position="bottom-right" autoClose={3000} closeOnClick pauseOnHover draggable />
 
