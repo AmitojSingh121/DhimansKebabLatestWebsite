@@ -298,7 +298,6 @@ export const food_items = [
 }, 
 
 {"id": 29, "food_name": " Prato Kebab","food_category": "Kebab", "paopitaprice": 6.50, "DonerPrice":"€6.50" ,"food_ingredient": "Combo Pack :- €7.50" , "food_bebita":"Bebida", 
-"food_bebita":"Bebida", 
  "food_ingri":"Salada mix e Carne. Moliho de Aliho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)","food_image": image1 , "buttonn":"+"
 },
 
