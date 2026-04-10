@@ -1,7 +1,10 @@
+import { t } from "i18next";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useTranslation } from "react-i18next";
+
 
 function GoldDivider() {
   return (
@@ -16,7 +19,7 @@ function GoldDivider() {
 export default function ContactUs() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [sending, setSending] = useState(false);
-
+  const {t} = useTranslation();
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = (e) => {
@@ -54,14 +57,14 @@ export default function ContactUs() {
         <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[400px] h-[200px] rounded-full blur-3xl opacity-10"
           style={{ background: "radial-gradient(circle, #c9a84c, transparent)" }} />
         <div className="relative z-10 text-center py-16 px-6">
-          <p className="text-[#c9a84c] text-[10px] tracking-[5px] uppercase mb-3">Get In Touch</p>
+          <p className="text-[#c9a84c] text-[10px] tracking-[5px] uppercase mb-3">{t("GetInTouch")}</p>
           <h1 className="text-5xl md:text-6xl font-bold text-[#f5f0e8] leading-none"
             style={{ fontFamily: "'Georgia', serif" }}>
-            Contact Us
+            {t("GetInTouch")}
           </h1>
           <GoldDivider />
           <p className="text-[#f5f0e8]/30 text-xs tracking-[3px] uppercase mt-4">
-            We'd love to hear from you
+            {t("LoveToHear")}
           </p>
         </div>
       </div>
@@ -82,7 +85,7 @@ export default function ContactUs() {
           {
             icon: "🕐",
             title: "Opening Hours",
-            lines: ["Mon–Fri: 11:00 AM – 10:00 PM", "Sat–Sun: 09:00 AM – 11:00 PM"],
+            lines: ["Mon–Sat: 11:00AM – 15:00PM , 18:00PM - 22.30PM","Tuesday: Closed" ,"Sun: 12:00 PM – 15:00 PM , 18:00PM - 22:30PM"],
           },
         ].map((card) => (
           <div key={card.title}
@@ -101,9 +104,9 @@ export default function ContactUs() {
 
         {/* Contact Form */}
         <div>
-          <p className="text-[10px] tracking-[4px] uppercase text-[#c9a84c] mb-2">Send a Message</p>
+          <p className="text-[10px] tracking-[4px] uppercase text-[#c9a84c] mb-2">{t("SendaMessage")}</p>
           <h2 className="text-2xl md:text-3xl mb-2" style={{ fontFamily: "'Georgia', serif" }}>
-            If you have any questions,<br />please contact us
+            {t("PleaseContactUs")}<br />
           </h2>
           <GoldDivider />
 
@@ -164,9 +167,9 @@ export default function ContactUs() {
 
         {/* Google Map */}
         <div className="flex flex-col gap-4">
-          <p className="text-[10px] tracking-[4px] uppercase text-[#c9a84c] mb-2">Find Us</p>
+          <p className="text-[10px] tracking-[4px] uppercase text-[#c9a84c] mb-2">{t("FindUs")}</p>
           <h2 className="text-2xl md:text-3xl mb-2" style={{ fontFamily: "'Georgia', serif" }}>
-            Our Location
+            {t("OurLocation")}
           </h2>
           <GoldDivider />
 
@@ -197,8 +200,8 @@ export default function ContactUs() {
 
       {/* ── Bottom CTA ── */}
       <div className="border-t border-[#c9a84c]/10 py-16 text-center px-6">
-        <p className="text-[#c9a84c] text-[10px] tracking-[4px] uppercase mb-3">Follow Us</p>
-        <h2 className="text-2xl mb-4" style={{ fontFamily: "'Georgia', serif" }}>Stay Connected</h2>
+        <p className="text-[#c9a84c] text-[10px] tracking-[4px] uppercase mb-3">{t("FollowUs")}</p>
+        <h2 className="text-2xl mb-4" style={{ fontFamily: "'Georgia', serif" }}>{t("StayConnected")}</h2>
         <GoldDivider />
         <div className="flex gap-4 justify-center mt-6">
           <a href="https://www.facebook.com/p/Dhimans-kebab-pizza-cafe-100063674913679/"

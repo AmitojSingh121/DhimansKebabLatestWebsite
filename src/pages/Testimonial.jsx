@@ -157,6 +157,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import { testimonialData } from "../constants/Testimonial";
+import { useTranslation } from "react-i18next";
 
 function Testimonial() {
   const breakpoints = {
@@ -164,19 +165,19 @@ function Testimonial() {
     640: { slidesPerView: 2, spaceBetween: 20 },
     1024: { slidesPerView: 3, spaceBetween: 24 },
   };
-
+  const {t} = useTranslation();
   return (
     <section className="bg-[#0d0d0d] py-20 px-6 md:px-16 border-t border-[#c9a84c]/10">
       {/* Header */}
       <div className="text-center mb-12">
         <p className="text-[#c9a84c] text-[10px] tracking-[4px] uppercase mb-3">
-          O que as pessoas dizem
+          {t("Whatpeoplesay")}
         </p>
         <h2 className="font-playfair text-[#f5f0e8] text-3xl md:text-4xl mb-2">
-        Avaliações de clientes
+         {t("Customerreviews")}
         </h2>
         <p className="text-[#f5f0e8]/30 text-sm mt-3">
-        Uma comunidade com mais de 1.000 clientes fiéis que confiam em nós para todas as refeições.
+         {t("Community")}
         </p>
         <div className="flex items-center justify-center gap-4 mt-5">
           <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#c9a84c]/40" />

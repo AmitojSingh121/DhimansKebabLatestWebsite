@@ -40,10 +40,13 @@ import AboutUs from "./pages/About";
 import Menu from "./pages/Menu";
 import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";  
+import LanguageSwitcher from "./components/LanguageSwitcher";
+
 function App() {
   return (
     <div>
       <NavBar />
+      <LanguageSwitcher/>
       <ToastContainer />
 
       <Routes>
@@ -69,9 +72,10 @@ function App() {
 
           {/* Privacy Policy page */}
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
-
+        
+        
       </Routes>
-
+        
       <Footer />
     </div>
   );

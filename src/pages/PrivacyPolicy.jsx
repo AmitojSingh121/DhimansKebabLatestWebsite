@@ -1,4 +1,6 @@
 import React from "react";
+import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 function GoldDivider() {
   return (
     <div className="flex items-center justify-center gap-3 my-2">
@@ -8,7 +10,6 @@ function GoldDivider() {
     </div>
   );
 }
-
 function Section({ title, children }) {
   return (
     <div className="space-y-4">
@@ -27,6 +28,7 @@ function Section({ title, children }) {
 }
 
 function PrivacyPolicy() {
+    const {t} = useTranslation();
   return (
     <div className="bg-[#0a0a0a] min-h-screen text-[#f5f0e8] pt-[72px]">
 
@@ -45,17 +47,17 @@ function PrivacyPolicy() {
         />
         <div className="relative z-10 text-center py-16 px-6">
           <p className="text-[#c9a84c] text-[10px] tracking-[5px] uppercase mb-3">
-            Jurídico e Jurídica
+            {t("PrivacyPolicy")}
           </p>
           <h1
             className="text-5xl md:text-6xl font-bold text-[#f5f0e8] leading-none"
             style={{ fontFamily: "'Georgia', serif" }}
           >
-            política de Privacidade
+            {t("LegalPolicy")}
           </h1>
           <GoldDivider />
           <p className="text-[#f5f0e8]/30 text-xs tracking-[3px] uppercase mt-4">
-           Ativação de política:  March 21, 2026
+           {t("PolicyActivation")}:  March 21, 2026
           </p>
         </div>
       </div>
@@ -69,8 +71,7 @@ function PrivacyPolicy() {
           as suas informações pessoais. Esta Política de Privacidade descreve como recolhemos, utilizamos,
           armazenamos e partilhamos os seus dados quando interage com o nosso restaurante, website ou serviços.
           <br /><br />
-          We use Your Personal data to provide and improve the Service. By using the Service, You agree to
-          the collection and use of information in accordance with this Privacy Policy.
+          Utilizamos os seus dados pessoais para fornecer e melhorar o Serviço. Ao utilizar o Serviço, concorda com a recolha e utilização de informações de acordo com esta Política de Privacidade.
         </p>
 
         {/* 1 */}
@@ -85,8 +86,8 @@ function PrivacyPolicy() {
           <p className="text-[#c9a84c]/80 text-xs tracking-[2px] uppercase mt-4">Definições</p>
           <ul className="space-y-3 mt-2">
             {[
-              { term: "Restaurante", def: "Restaurante Dhiman's Kebab e Pizza, sito na Rua do Rosmaninho Lote 5 Esq, 2135-083 Samora Correia, Portugal." },
-              { term: "Serviços", def: "Todas as atividades, produtos e ofertas fornecidas pelo restaurante, incluindo refeições e encomendas online." },
+              { term: "Restaurant", def: "Restaurante Dhiman's Kebab e Pizza, sito na Rua do Rosmaninho Lote 5 Esq, 2135-083 Samora Correia, Portugal." },
+              { term: "Services", def: "Todas as atividades, produtos e ofertas fornecidas pelo restaurante, incluindo refeições e encomendas online." },
               { term: "Cookies", def: "Pequenos ficheiros colocados no seu dispositivo, contendo os detalhes do seu histórico de navegação." },
               { term: "Country", def: "Samora Correia, Portugal." },
               { term: "Device", def: "Qualquer dispositivo que possa aceder ao Serviço como um computador, telemóvel ou tablet digital." },

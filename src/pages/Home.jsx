@@ -309,6 +309,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { useState, useEffect } from "react";
 import image1 from "../assests/image1.jpg";
 import image2 from "../assests/image2.webp";
+import { useTranslation } from "react-i18next";
+
 
 function Home() {
   const { cate, setCate, input, showCart, setShowCart } = useContext(dataContext);
@@ -318,7 +320,7 @@ function Home() {
   const [customerName, setCustomerName] = useState("");
   const [customerEmail, setCustomerEmail] = useState("");
   const [customerPhone, setCustomerPhone] = useState("");
-
+  const { t } = useTranslation();
   useEffect(() => { setCurrentPage(1); }, [cate]);
 
   function filterCategory(category) {
@@ -343,6 +345,7 @@ function Home() {
     items.forEach((item, i) => {
       message += `${i + 1}. ${item.name}\n   Qty: ${item.qty}\n`;
       if (item.ingredients?.length) message += `   Ingredients: ${item.ingredients.join(", ")}\n`;
+      if (item.saladIngredients?.length)message += `   Salad: ${item.saladIngredients.join(", ")}\n`;
       if (item.drink) message += `   🥤 Drink: ${item.drink}\n`;
       if (item.comboType) message += `   Combo: ${item.comboType === "with" ? "With Combo" : "Without Combo"}\n`;
        if (item.description)message += `   Note: ${item.description}\n`;   // ⭐ YEH LINE ADD KARO
@@ -376,9 +379,9 @@ function Home() {
               Est. Lisboa, Portugal
             </div>
             <h1 className="font-playfair text-4xl md:text-6xl text-[#f5f0e8] font-bold leading-tight mb-4">
-             Sabores autênticos,
+             {t("sabores")}
              <br />
-              <span className="text-[#c9a84c]">Feito com paixão</span>
+              <span className="text-[#c9a84c]">{t("Madewithpassion")}</span>
             </h1>
             <p className="text-[#f5f0e8]/40 text-xs tracking-[3px] uppercase mb-8">
               Pizza · Kebab · Saladas · Vegetarian
@@ -387,12 +390,12 @@ function Home() {
               <button
                 onClick={() => document.getElementById("menu-section").scrollIntoView({ behavior: "smooth" })}
                 className="bg-[#c9a84c] hover:bg-[#e0bf6a] text-[#0d0d0d] px-8 py-3 text-xs font-bold tracking-[2px] uppercase transition-all duration-300">
-                Encomende agora
+                {t("Encomendeagora")}
               </button>
               <button
                 onClick={() => document.getElementById("menu-section").scrollIntoView({ behavior: "smooth" })}
                 className="border border-[#c9a84c]/40 hover:border-[#c9a84c] text-[#c9a84c] px-8 py-3 text-xs tracking-[2px] uppercase transition-all duration-300">
-                Visualizar Menu
+                {t("VisualizarMenu")}
               </button>
             </div>
           </div>
@@ -404,7 +407,7 @@ function Home() {
         <div className="grid grid-cols-3 border-y border-[#c9a84c]/10">
           {[
             { num: "46+", label: "Menu Unid" },
-            { num: "4.8★", label: "Avaliação do cliente" },
+            { num: "4.8★", label: "Avaliação do cliente"},
             { num: "30min", label: "Média Entrega" },
           ].map((stat) => (
             <div key={stat.label} className="py-5 text-center border-r border-[#c9a84c]/10 last:border-r-0">
@@ -421,8 +424,8 @@ function Home() {
         {/* Section Header */}
         {!input && (
           <div className="text-center mb-8 px-6">
-            <p className="text-[#c9a84c] text-[10px] tracking-[4px] uppercase mb-2">Nossas Especialidades</p>
-            <h2 className="font-playfair text-[#f5f0e8] text-3xl">Explorar o Menu</h2>
+            <p className="text-[#c9a84c] text-[10px] tracking-[4px] uppercase mb-2">{t("ourSpecialities")}</p>
+            <h2 className="font-playfair text-[#f5f0e8] text-3xl">{t("ExploretheMenu")}</h2>
             <div className="flex items-center justify-center gap-4 mt-4">
               <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#c9a84c]/40" />
               <span className="text-[#c9a84c] text-sm">✦</span>
@@ -474,6 +477,7 @@ function Home() {
                 foodCategory={item.food_category}
                 comboPrice={item.comboPrice}
                 ingredients={item.ingredients}
+                saladIngredients={item.saladIngredients}
                 food_ingri={item.food_ingri}
                 food_newingri={item.food_newingri}
                 food_bebita={item.food_bebita}
@@ -528,7 +532,7 @@ function Home() {
               {items.map((item) => (
                 <Card2 key={item.id} name={item.name} price={item.price}
                   image={item.image} id={item.id} qty={item.qty}
-                  ingredients={item.ingredients} drink={item.drink} />
+                  ingredients={item.ingredients}  saladIngredients={item.saladIngredients}  drink={item.drink} />
               ))}
             </div>
 

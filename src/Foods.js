@@ -200,7 +200,7 @@ export const food_items = [
 },
    
    //21st Pizza
-   {"id": 21, "food_name": " Pizza Dhiman's Kebab", "food_category": "Pizza" , "food_ingredient": "Queijo ,Molho de Tomate, Oregao, Kebab de Frango,Atum,Cogumelos, Cebola Roxa, Pimenta Branca.", "food_image": image1, "food_sizes":"Sizes", "food_prices":"Prices", "food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", "food_MaxiPrice":"Maxi(50 cm)", "food_PartyPrice":"Party(60 cm)" , "myMiniFood_price": "€7.50" ,"myMediaFood_price ": "€11.90" , "myMaxiFood_price": "€19.90" , "myPartyFood_price": "€34.50" ,
+   {"id": 21, "food_name": "Pizza Dhiman's Kebab", "food_category": "Pizza" , "food_ingredient": "Queijo ,Molho de Tomate, Oregao, Kebab de Frango,Atum,Cogumelos, Cebola Roxa, Pimenta Branca.", "food_image": image1, "food_sizes":"Sizes", "food_prices":"Prices", "food_MiniPrice":"Mini(24 cm)", "food_MediaPrice":"Média(30 cm)", "food_MaxiPrice":"Maxi(50 cm)", "food_PartyPrice":"Party(60 cm)" , "myMiniFood_price": "€7.50" ,"myMediaFood_price ": "€11.90" , "myMaxiFood_price": "€19.90" , "myPartyFood_price": "€34.50" ,
     ingredientsBySize: {
     Mini: ["Queijo" ,"Molho de Tomate","Orégano", "Kebab de Frango" , "Atum" , "Cogumelos" , "Cebola Roxa" , "Pimenta Branca" ],
     Media: ["Queijo" ,"Molho de Tomate","Orégano", "Kebab de Frango" , "Atum" , "Cogumelos" , "Cebola Roxa" , "Pimenta Branca" ],
@@ -246,22 +246,54 @@ export const food_items = [
   food_name: "Doner Kebab / Pao Pita",
   food_category: "Kebab",
 
-  paopitaprice: 4.50,          // WITHOUT COMBO
-  comboPrice: 6.50,            // ✅ WITH COMBO (IMPORTANT)
-
+  paopitaprice: 4.50,
+  comboPrice: 6.50,
   DonerPrice: "€4.50",
+
+  food_ingredient: "Combo Pack Available",
+  food_bebita: "Bebida + Batata frita",
+
+  // main ingredients
+  ingredients: [
+    "Pao / Pita",
+    "Salada mix e Carne",
+    "Molho de Alho",
+    "Ketchup"
+  ],
+
+  // salada ingredients
+  saladIngredients: [
+    "Alface",
+    "Cebola",
+    "Cenoura",
+    "Couve roxa",
+    "Tomate",
+  ],
+
+  food_image: image2
+},
+
+{
+  id: 26,
+  food_name: "Durum Kebab(Tortilla fina)",
+  food_category: "Kebab",
+
+  paopitaprice:  5.00 ,          // WITHOUT COMBO
+  comboPrice: 7.00,            // ✅ WITH COMBO (IMPORTANT)
+
+  DonerPrice: "€5.00",
 
   food_bebita: "Bebida + Batata frita",
   drinks: ["Coca-Cola 33cl", "Coca-Cola Zero 33cl", "Sumol Annanas 0.33cl", "Frutea Manga e Maracuja 33cl"],
 
-  food_ingri: "Pao Pita, Salada mix e Carne, Molho de Alho e Ketchup",
+  food_ingri: "Salada mix e Carne, Moliho de Aliho e Ketchup",
   food_newingri:
     "Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)",
 
   food_ingredient: "Combo Pack Available",
 
   ingredients: [
-    "Pao / Pita",
+    "Alface",
     "Salada mix e Carne",
     "Cebola",
     "Cenoura",
@@ -275,10 +307,25 @@ export const food_items = [
 },
 
 {
-  "id": 26, "food_name": "Durum Kebab(Tortilla fina)","food_category": "Kebab", "paopitaprice": 5.00,  "DonerPrice":"€5.00", "food_ingredient": "Combo Pack :- €7.00 " , "food_bebita":"Bebida + Batata frita", 
- "food_ingri":"Salada mix e Carne. Moliho de Aliho e Ketchup", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)", food_image: image2,
+  id: 27,
+  food_name: "Pan Kebab",
+  food_category: "Kebab",
+
+  paopitaprice:  5.60 ,          // WITHOUT COMBO
+  comboPrice: 7.40,            // ✅ WITH COMBO (IMPORTANT)
+
+  DonerPrice: "€5.60",
+
+  food_bebita: "Bebida + Batata frita",
+  drinks: ["Coca-Cola 33cl", "Coca-Cola Zero 33cl", "Sumol Annanas 0.33cl", "Frutea Manga e Maracuja 33cl"],
+
+  food_ingri: "Salada mix e Carne. Moliho de Aliho e Ketchup",
+  food_newingri:
+    "Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)",
+  food_ingredient: "Combo Pack Available",
+
   ingredients: [
-    "Pao / Pita",
+    "Salada mix e Carne",
     "Alface",
     "Cebola",
     "Cenoura",
@@ -287,15 +334,65 @@ export const food_items = [
     "Molho de Alho",
     "Ketchup"
   ],
+
+  food_image: image2
 },
 
-{"id": 27, "food_name": "Pan Kebab","food_category": "Kebab", "paopitaprice": 5.60, "DonerPrice":"€5.60" ,"food_ingredient": "Combo Pack :- €7.40" , "food_bebita":"Bebida + Batata frita", 
- "food_ingri":"Salada mix e Carne. Moliho de Aliho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)", "food_image": image1 , "buttonn":"+"
+{
+  id: 28,
+  food_name: "Doner Box (caixa pequena)",
+  food_category: "Kebab",
+
+  paopitaprice:  4.50 ,          // WITHOUT COMBO
+  comboPrice: 5.60,            // ✅ WITH COMBO (IMPORTANT)
+
+  DonerPrice: "€4.50",
+
+  food_bebita: "Bebida + Batata frita",
+  drinks: ["Coca-Cola 33cl", "Coca-Cola Zero 33cl", "Sumol Annanas 0.33cl", "Frutea Manga e Maracuja 33cl"],
+
+  food_ingri: "Carne e Batata Frita, Moliho de Aliho e Ketchup, Caixa peaceno",
+  
+  food_ingredient: "Combo Pack Available",
+
+  ingredients: [
+    "Carne",
+    "Batata Frita",
+    "Caixa peaceno" ,
+    "Molho de Alho",
+    "Ketchup"
+  ],
+
+  food_image: image2
 },
 
-{"id": 28, "food_name": "Doner Box (caixa pequena)","food_category": "Kebab", "paopitaprice": 4.50, "DonerPrice":"€4.50" ,  "food_ingredient": "Combo Pack :- €5.60" , "food_bebita":"Bebida", 
- "food_ingri":"Carne e Batata Frita. Moliho de Aliho e Ketchup. Caixa peaceno", "food_image": image1 , "buttonn":"+"
-}, 
+// {
+//   id: 29,
+//   food_name: "Prato Kebab",
+//   food_category: "Kebab",
+
+//   paopitaprice: 6.50 ,          // WITHOUT COMBO
+//   comboPrice: 7.50,            // ✅ WITH COMBO (IMPORTANT)
+
+//   DonerPrice: "€6.50",
+
+//   food_bebita: "Bebida + Batata frita",
+//   drinks: ["Coca-Cola 33cl", "Coca-Cola Zero 33cl", "Sumol Annanas 0.33cl", "Frutea Manga e Maracuja 33cl"],
+
+//   food_ingri: "Salada mix, Batata e Carne, Moliho de Aliho e Ketchup",
+  
+//   food_ingredient: "Combo Pack Available",
+
+//   ingredients: [
+//     "Salada mix",
+//     "Batata e Carne",
+//     "Molho de Alho",
+//     "Ketchup"
+//   ],
+
+//   food_image: image2
+// },
+
 
 {"id": 29, "food_name": " Prato Kebab","food_category": "Kebab", "paopitaprice": 6.50, "DonerPrice":"€6.50" ,"food_ingredient": "Combo Pack :- €7.50" , "food_bebita":"Bebida", 
  "food_ingri":"Salada mix e Carne. Moliho de Aliho e Ketchup.", "food_newingri":"Salada (Alface, Cebola, Cenoura, Couve roxa, Tomate, Molho de Alho e Ketchup)","food_image": image1 , "buttonn":"+"
@@ -443,17 +540,76 @@ export const food_items = [
  "food_image": image1 
 },
 
-
 {"id": 42, "food_name": " CAFÉ ","food_category": "Deserts", "paopitaprice": 2.00 , "DonerPrice":"€2.00",
  "food_image": image1 , 
- 
 },
+
 //  Snacks 
 {"id": 43, "food_name": "Nuggets De Frango 6 Und","food_category": "Snacks", "paopitaprice": 4.20 , "DonerPrice":"€4.20", 
  "food_image": image1 },
 
 {"id": 44, "food_name": "Chicken Fingers 5pcs","food_category": "Snacks", "paopitaprice": 4.30, "DonerPrice":"€4.30",
  "food_image": image1 , 
+},
+
+{"id": 45, "food_name": "Mozzarella Sticks 6 Und ","food_category": "Snacks", "paopitaprice": 4.40, "DonerPrice":"€4.40",
+ "food_image": image1 , 
+},
+
+{"id": 46, "food_name": "Chicken Pops 20 Und","food_category": "Snacks", "paopitaprice": 4.70, "DonerPrice":"€4.70",
+ "food_image": image1 , 
+},
+
+{"id": 47, "food_name": "Jalapeños Verde Cheddar 6 Und ","food_category": "Snacks", "paopitaprice": 4.40, "DonerPrice":"€4.40",
+ "food_image": image1 , 
+},
+
+{"id": 48, "food_name": "Asas De Frango 6 Und","food_category": "Snacks", "paopitaprice": 5.00, "DonerPrice":"€5.00",
+ "food_image": image1 , 
+},
+
+{"id": 49, "food_name": "Batata Frita Pequeno","food_category": "Snacks", "paopitaprice": 2.00, "DonerPrice":"€2.00",
+ "food_image": image1 , 
+},
+
+{"id": 50, "food_name": "Vegan Vegetariana Falafel 5 Unidades","food_category": "Snacks", "paopitaprice": 3.90, "DonerPrice":"€3.90",
+ "food_image": image1 , 
+},
+
+{"id": 51, "food_name": "Lamb Seekh Kebab Roll (Cordero)","food_category": "Snacks", "paopitaprice": 4.90, "DonerPrice":"€4.90",
+ "food_image": image1 ,"food_ingri":"Carne Com Pouco de Pimenta", 
+},
+
+{"id": 52, "food_name": "Seekh Kebab de Frango 3 und","food_category": "Snacks", "paopitaprice": 4.90, "DonerPrice":"€4.90",
+ "food_image": image1 ,"food_ingri":"Carne Com Pouco de Pimenta", 
+},
+
+{
+id:53,
+food_name:"Samosa grande 2 und",
+food_category:"Snacks",
+paopitaprice:4.90,
+DonerPrice:"€4.90",
+chooseFavorite:[
+{
+name:"Chicken Samosa 2und",
+price:"€3.80"
+},
+{
+name:"Vegan Samosa 2und 🌱",
+price:"€3.40"
+}
+],
+
+food_image:image1
+},
+
+{"id": 54, "food_name": "Chicken Spring Roll 6 und","food_category": "Snacks", "paopitaprice": 4.90, "DonerPrice":"€4.90",
+ "food_image": image1 ,"food_ingri":"Carne Com Pouco de Pimenta", 
+},
+
+{"id": 55, "food_name": "Chicken Lollipop 5und🐔","food_category": "Snacks", "paopitaprice": 7.50, "DonerPrice":"€7.50",
+ "food_image": image1 ,"food_ingri":"Porção de 5 lollipops de frango (coxinhas da asa)", 
 },
 
 // Pizza Seekh Kebab 

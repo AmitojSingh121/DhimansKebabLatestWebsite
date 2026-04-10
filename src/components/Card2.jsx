@@ -126,7 +126,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { useDispatch } from "react-redux";
 import { DecrementQty, IncrementQty, RemoveItem } from "../Redux/cartSlice";
 
-function Card2({ name, id, image, qty, price, ingredients, drink }) {
+function Card2({ name, id, image, qty, price, ingredients, drink , saladIngredients}) {
   const dispatch = useDispatch();
 
   return (
@@ -140,8 +140,20 @@ function Card2({ name, id, image, qty, price, ingredients, drink }) {
       {/* Details */}
       <div className="flex-1 min-w-0 flex flex-col gap-1">
         
-        <p className="text-[#f5f0e8] text-sm font-medium">{name}</p>
+      <p className="text-[#f5f0e8] text-sm font-medium">{name}</p>
+        {/* Ingredients */}
+       {ingredients?.length > 0 && (
+      <p className="text-xs text-gray-400">
+       Ingredients: {ingredients.join(", ")}
+      </p>
+     )}
 
+{/* Salada */}
+{saladIngredients?.length > 0 && (
+<p className="text-xs text-yellow-400">
+Salada: {saladIngredients.join(", ")}
+</p>
+)}
         {Array.isArray(ingredients) && ingredients.length > 0 && (
           <p className="text-[#f5f0e8]/35 text-[10px] leading-relaxed">
             {ingredients.join(", ")}

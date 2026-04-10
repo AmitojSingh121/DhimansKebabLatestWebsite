@@ -536,6 +536,7 @@ import { useSelector } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { RxCross2 } from "react-icons/rx";
+import { useTranslation } from "react-i18next";
 
 function Menu() {
   const { cate, setCate, showCart, setShowCart } = useContext(dataContext);
@@ -545,6 +546,7 @@ function Menu() {
   const [customerName, setCustomerName] = useState("");
   const [customerEmail, setCustomerEmail] = useState("");
   const [customerPhone, setCustomerPhone] = useState("");
+  const { t } = useTranslation();   // ✅ yahan add karo
 
   useEffect(() => {
     setCate(food_items);
@@ -605,9 +607,9 @@ function Menu() {
         <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[400px] h-[200px] rounded-full blur-3xl opacity-10"
           style={{ background: "radial-gradient(circle, #c9a84c, transparent)" }} />
         <div className="relative z-10 text-center py-16 px-6">
-          <p className="text-[#c9a84c] text-[10px] tracking-[5px] uppercase mb-3">Nossas Especialidades</p>
+          <p className="text-[#c9a84c] text-[10px] tracking-[5px] uppercase mb-3">{t("ourSpecialities")}</p>
           <h1 className="text-5xl md:text-6xl font-bold text-[#f5f0e8] leading-none" style={{ fontFamily: "'Georgia', serif" }}>
-            Explorar o Menu
+                {t("menu")}
           </h1>
           <div className="flex items-center justify-center gap-4 mt-5">
             <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#c9a84c]/40" />

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import DhimansLogoimg from "../assests/DhimansLogoimg.webp";
+import { useTranslation } from "react-i18next";
 
 // ── Gallery images – swap src for your real assets ──────────────────────────
 import image1 from "../assests/image1.jpg";
@@ -11,13 +12,13 @@ const GALLERY = [
   { src: image1, caption: "A feast for the senses" },
   { src: image1, caption: "The team at work" },
 ];
-
 const STATS = [
   { value: "18+", label: "Anos de Sabor" },
   { value: "50+", label: "Menu Unid" },
   { value: "10K+", label: "Convidados felizes" },
   { value: "★ 4.8", label: "Média Avaliação" },
 ];
+
 
 // ── Tiny hook: animates number when element enters viewport ──────────────────
 function useInView(threshold = 0.2) {
@@ -51,6 +52,7 @@ export default function AboutUs() {
   const [statsRef, statsVisible] = useInView(0.2);
   const [galleryRef, galleryVisible] = useInView(0.1);
   const [lightbox, setLightbox] = useState(null); // index | null
+  const {t} = useTranslation();
 
   // close lightbox on Escape
   useEffect(() => {
@@ -101,7 +103,7 @@ export default function AboutUs() {
             className="text-[#c9a84c] text-[10px] tracking-[5px] uppercase mb-4"
             style={{ transitionDelay: "0.1s" }}
           >
-            Feito com o coração, servido com alma
+            {t("Madewithheart")}
           </p>
           <h1
             className="text-5xl md:text-7xl font-bold mb-4 leading-none"
@@ -112,7 +114,7 @@ export default function AboutUs() {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Sobre nós
+            {t("AboutUs")}
           </h1>
           <GoldDivider />
           <p className="text-[#f5f0e8]/40 text-sm tracking-[2px] uppercase mt-4">
@@ -161,7 +163,7 @@ export default function AboutUs() {
 
           {/* decorative quote */}
           <blockquote className="border-l-2 border-[#c9a84c]/40 pl-4 text-[#f5f0e8]/40 text-xs italic leading-relaxed max-w-xs">
-            "Cada prato que servimos carrega o calor da nossa terra natal e a paixão da nossa cozinha."
+           {t("BlockQuote")}
           </blockquote>
         </div>
 
@@ -175,24 +177,24 @@ export default function AboutUs() {
           }}
         >
           <p className="text-[10px] tracking-[4px] uppercase text-[#c9a84c]">
-            Our Story
+            {t("OurStory")}
           </p>
           <h2
             className="text-3xl md:text-4xl leading-snug"
             style={{ fontFamily: "'Georgia', serif" }}
           >
-            Uma cozinha construída{" "}
-            <span className="text-[#c9a84c]">Paixão &amp;Tradição</span>
+            {t("Abuiltkitchen")}{" "}
+            <span className="text-[#c9a84c]">{t("Passion")} &amp;{t("Traditional")}</span>
           </h2>
           <GoldDivider />
           <p className="text-[#f5f0e8]/55 text-sm leading-relaxed">
-            Dhiman's Kebab &amp; Pizza Cafe Nasceu de um sonho simples: trazer os sabores ricos e marcantes de autênticos kebabs e pizzas artesanais para o coração de Samora Correia, Portugal. O que começou como um pequeno negócio familiar rapidamente se transformou numa instituição local muito querida.
+            Dhiman's Kebab &amp; Pizza Cafe {t("Desc1")}
           </p>
           <p className="text-[#f5f0e8]/55 text-sm leading-relaxed">
-           Cada receita que servimos foi aprimorada ao longo de anos, inspirada em gerações de tradição culinária. Selecionamos os melhores ingredientes — especiarias aromáticas, vegetais frescos e carnes de primeira qualidade — para garantir que cada mordida conte uma história de cuidado e maestria.
+          {t("Desc2")}
           </p>
           <p className="text-[#f5f0e8]/55 text-sm leading-relaxed">
-           Seja para um almoço rápido ou um jantar demorado em família, o Dhiman's é o seu lar longe de casa. Não servimos apenas comida — criamos memórias, um prato de cada vez.
+          {t("Desc3")}
           </p>
 
           {/* CTA */}
@@ -200,7 +202,7 @@ export default function AboutUs() {
             href="/menu"
             className="inline-block mt-2 px-8 py-3 bg-[#c9a84c] hover:bg-[#e0bf6a] text-[#0d0d0d] text-xs font-bold tracking-[2px] uppercase transition-all duration-300"
           >
-            Explore nosso Menu
+            {t("Explore")}
           </a>
         </div>
       </section>
@@ -239,13 +241,13 @@ export default function AboutUs() {
       <section className="max-w-5xl mx-auto px-6 md:px-12 py-24">
         <div className="text-center mb-14">
           <p className="text-[#c9a84c] text-[10px] tracking-[4px] uppercase mb-3">
-            O que defendemos
+            {t("Whatwestandfor")}
           </p>
           <h2
             className="text-3xl md:text-4xl"
             style={{ fontFamily: "'Georgia', serif" }}
           >
-            Nossos valores
+            {t("Ourvalues")}
           </h2>
           <GoldDivider />
         </div>
@@ -292,17 +294,17 @@ export default function AboutUs() {
       >
         <div className="text-center mb-14">
           <p className="text-[#c9a84c] text-[10px] tracking-[4px] uppercase mb-3">
-            Um vislumbre do interior
+            {t("Glimpse")}
           </p>
           <h2
             className="text-3xl md:text-4xl"
             style={{ fontFamily: "'Georgia', serif" }}
           >
-            Nossa Galeria
+            {t("Gallery")}
           </h2>
           <GoldDivider />
           <p className="text-[#f5f0e8]/30 text-xs mt-3">
-            Clique em qualquer foto para vê-la em tamanho maior
+          {t("PhotoLarger")}
           </p>
         </div>
 
@@ -381,16 +383,16 @@ export default function AboutUs() {
         </div>
       )}
 
-      {/* ════════════════ VISIT US CTA ════════════════ */}
+      {/* VISIT US CTA */}
       <section className="py-24 px-6 text-center border-t border-[#c9a84c]/10">
         <p className="text-[#c9a84c] text-[10px] tracking-[4px] uppercase mb-4">
-            Venha nos encontrar
+            {t("ComeFindUs")}
         </p>
         <h2
           className="text-3xl md:text-4xl mb-4"
           style={{ fontFamily: "'Georgia', serif" }}
         >
-            Adoraríamos te ver!
+          {t("Wedlovetoseeyou")}
         </h2>
         <GoldDivider />
         <p className="text-[#f5f0e8]/40 text-sm mt-4 mb-8 max-w-md mx-auto leading-relaxed">
@@ -403,13 +405,13 @@ export default function AboutUs() {
             href="/reservation"
             className="px-8 py-3 bg-[#c9a84c] hover:bg-[#e0bf6a] text-[#0d0d0d] text-xs font-bold tracking-[2px] uppercase transition-all duration-300"
           >
-            Reserve uma mesa
+            {t("Reserveatable")}
           </a>
           <a
             href="/menu"
             className="px-8 py-3 border border-[#c9a84c]/40 hover:border-[#c9a84c] text-[#c9a84c] text-xs font-bold tracking-[2px] uppercase transition-all duration-300"
           >
-            Visualizar Menu
+            {t("ViewMenu")}
           </a>
         </div>
       </section>

@@ -72,7 +72,6 @@ import { useSelector } from "react-redux";
 function NavBar() {
   let { input, setInput, setCate, showCart, setShowCart } = useContext(dataContext);
   const [scrolled, setScrolled] = useState(false);
-
   useEffect(() => {
     const newlist = food_items.filter(
       (item) =>

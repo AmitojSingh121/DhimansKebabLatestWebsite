@@ -149,12 +149,14 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { useForm, ValidationError } from "@formspree/react";
 import { IoLocationOutline, IoCallOutline, IoTimeOutline } from "react-icons/io5";
-
+import { useTranslation } from "react-i18next";
 function ReservationForm() {
   const [formData, setFormData] = useState({
     name: "", email: "", phonenumber: "", dateofbirth: "", timeofreservation: "", guestsdhiman: "1",
   });
   const [state, handleSubmit] = useForm("xojndkdn");
+  const {t} = useTranslation();
+  
 
   if (state.succeeded) {
     return (
@@ -189,9 +191,9 @@ function ReservationForm() {
     <section className="bg-[#0d0d0d] py-20 px-6 md:px-16 border-t border-[#c9a84c]/10">
       {/* Header */}
       <div className="text-center mb-12">
-        <p className="text-[#c9a84c] text-[10px] tracking-[4px] uppercase mb-3">Reserve uma mesa</p>
-        <h2 className="font-playfair text-[#f5f0e8] text-3xl md:text-4xl">
-          Jante conosco — <span className="text-[#c9a84c]">Reserve agora</span>
+        <p className="text-[#c9a84c] text-[10px] tracking-[4px] uppercase mb-3">{t("Bookatable")}</p>
+        <h2 className="font-playfair text-[#241909] text-3xl md:text-4xl">
+          {t("Dinewithus")}<span className="text-[#c9a84c]">{t("Reserve")}</span>
         </h2>
         <div className="flex items-center justify-center gap-4 mt-5">
           <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#c9a84c]/40" />
@@ -262,7 +264,7 @@ function ReservationForm() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <IoLocationOutline className="text-[#c9a84c] w-4 h-4" />
-              <span className="text-[10px] tracking-[2px] uppercase text-[#c9a84c]">Address</span>
+              <span className="text-[10px] tracking-[2px] uppercase text-[#c9a84c]">{t("Address")}</span>
             </div>
             <p className="text-[#f5f0e8]/50 text-xs leading-relaxed">
               Rua do Rosmaninho Lote esq, 2135-083 Samora Correia, Portugal
@@ -271,14 +273,14 @@ function ReservationForm() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <IoCallOutline className="text-[#c9a84c] w-4 h-4" />
-              <span className="text-[10px] tracking-[2px] uppercase text-[#c9a84c]">Call Us</span>
+              <span className="text-[10px] tracking-[2px] uppercase text-[#c9a84c]">{t("CallUs")}</span>
             </div>
             <p className="font-playfair text-[#f5f0e8] text-lg">+351 920 097 401</p>
           </div>
           <div>
             <div className="flex items-center gap-2 mb-3">
               <IoTimeOutline className="text-[#c9a84c] w-4 h-4" />
-              <span className="text-[10px] tracking-[2px] uppercase text-[#c9a84c]">Open Hours</span>
+              <span className="text-[10px] tracking-[2px] uppercase text-[#c9a84c]">{t("OpenHours")}</span>
             </div>
             <p className="text-[#f5f0e8]/50 text-xs leading-relaxed">
               Mon – Fri: 11:00 AM – 10:00 PM<br />
@@ -286,7 +288,7 @@ function ReservationForm() {
             </p>
           </div>
           <div>
-            <p className="text-[10px] tracking-[2px] uppercase text-[#c9a84c] mb-3">Follow Us</p>
+            <p className="text-[10px] tracking-[2px] uppercase text-[#c9a84c] mb-3">{t("FollowUs")}</p>
             <div className="flex gap-3">
               <a href="https://www.facebook.com/p/Dhimans-kebab-pizza-cafe-100063674913679/" target="_blank" rel="noreferrer"
                 className="text-[#f5f0e8]/30 hover:text-[#c9a84c] transition-colors">

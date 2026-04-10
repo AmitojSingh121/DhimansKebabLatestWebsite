@@ -64,21 +64,24 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { useForm, ValidationError } from "@formspree/react";
 import DhimansLogoimg from "../assests/DhimansLogoimg.webp";
 import { Link } from 'react-router-dom'
+import LanguageSwitcher from "./LanguageSwitcher";   // 👈 ADD THIS
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
   const [state, handleSubmit] = useForm("xojndkdn");
-
+  const {t} = useTranslation();
+  
   return (
     <footer className="bg-[#0a0a0a] border-t border-[#c9a84c]/10">
       {/* Newsletter */}
       <div className="border-b border-[#c9a84c]/10 py-14 px-6 md:px-16">
         <div className="max-w-xl mx-auto text-center space-y-4">
-          <p className="text-[#c9a84c] text-[10px] tracking-[4px] uppercase">Fique atualizado</p>
+          <p className="text-[#c9a84c] text-[10px] tracking-[4px] uppercase">{t("Stayupdated")}</p>
           <h3 className="font-playfair text-[#f5f0e8] text-2xl md:text-3xl">
-            Não perca nossas ofertas especiais!
+            {t("MissSpecialOffer")}
           </h3>
           <p className="text-[#f5f0e8]/30 text-sm">
-          Assine nossa newsletter para receber ofertas exclusivas e novidades.
+          {t("Subscribe")}
           </p>
           {state.succeeded ? (
             <p className="text-[#c9a84c] text-sm">Obrigado por se inscrever!✦</p>
@@ -89,7 +92,7 @@ export default function Footer() {
               <ValidationError prefix="EmailCustomer" field="emailcustomer" errors={state.errors} />
               <button type="submit" disabled={state.submitting}
                 className="bg-[#c9a84c] hover:bg-[#e0bf6a] text-[#0d0d0d] px-6 py-3.5 text-xs font-bold tracking-[2px] uppercase transition-all duration-300 disabled:opacity-50 flex-shrink-0">
-                Join Now
+                {t("JoinNow")}
               </button>
             </form>
           )}
@@ -109,7 +112,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-[#f5f0e8]/30 text-xs leading-relaxed">
-            Sabores autênticos elaborados com paixão. Servindo Lisboa desde que abrimos as nossas portas.
+            {t("Authenticflavors")}
             </p>
             <div className="flex gap-4 pt-2">
               <a href="https://www.facebook.com/p/Dhimans-kebab-pizza-cafe-100063674913679/" target="_blank" rel="noreferrer"
@@ -125,7 +128,7 @@ export default function Footer() {
 
           {/* Links */}
           <div className="space-y-4">
-            <p className="text-[10px] tracking-[3px] uppercase text-[#c9a84c]">Quick Links</p>
+            <p className="text-[10px] tracking-[3px] uppercase text-[#c9a84c]">{t("QuickLinks")}</p>
             <ul className="space-y-3">
               {[
   { label: "Home",           path: "/"            },
@@ -148,11 +151,16 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="space-y-4">
-            <p className="text-[10px] tracking-[3px] uppercase text-[#c9a84c]">Contact</p>
+            <p className="text-[10px] tracking-[3px] uppercase text-[#c9a84c]">{t("Contact")}</p>
             <div className="space-y-3 text-[#f5f0e8]/40 text-xs leading-relaxed">
               <p>Rua do Rosmaninho Lote esq,<br />2135-083 Samora Correia, Portugal</p>
               <p className="text-[#f5f0e8]/60">+351 920 097 401</p>
               <p>Mon–Fri: 11:00 AM – 10:00 PM<br />Sat–Sun: 09:00 AM – 11:00 PM</p>
+   
+         {/* Language Switcher */}
+           <div className="mt-4">
+               <LanguageSwitcher/>
+            </div>
             </div>
           </div>
         </div>
@@ -161,7 +169,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-[#c9a84c]/10 py-5 px-6 md:px-16">
         <div className="flex flex-col md:flex-row justify-between items-center gap-2">
-          <p className="text-[#f5f0e8]/20 text-xs">© 2026 Dhiman's Kebab Pizza Cafe. All rights reserved.</p>
+          <p className="text-[#f5f0e8]/20 text-xs">{t("Reserved")}</p>
           <div className="flex items-center gap-2">
             <div className="w-8 h-px bg-[#c9a84c]/30" />
             <span className="text-[#c9a84c] text-xs">✦</span>
