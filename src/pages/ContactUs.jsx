@@ -1,11 +1,8 @@
-import { t } from "i18next";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useTranslation } from "react-i18next";
-
-
 function GoldDivider() {
   return (
     <div className="flex items-center justify-center gap-3 my-2">

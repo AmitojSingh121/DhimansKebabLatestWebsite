@@ -59,6 +59,7 @@ function Menu() {
             style={{ fontFamily: "'Georgia', serif" }}
           >
             Explore The Menu
+            
           </h1>
           <div className="flex items-center justify-center gap-4 mt-5">
             <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#c9a84c]/40" />

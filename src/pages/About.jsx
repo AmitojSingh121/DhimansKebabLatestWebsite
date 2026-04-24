@@ -21,7 +21,9 @@ const STATS = [
 
 
 // ── Tiny hook: animates number when element enters viewport ──────────────────
-function useInView(threshold = 0.2) {
+useEffect(() => {
+  // code
+}, [threshold]);{
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
   useEffect(() => {
