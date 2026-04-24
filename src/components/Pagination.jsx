@@ -18,7 +18,6 @@ const Pagination = ({ category }) => {
   }, [category])
 
   // 🔹 Pagination
-  const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE)
   const start = (currentPage - 1) * ITEMS_PER_PAGE
   const currentItems = filteredData.slice(start, start + ITEMS_PER_PAGE)
 
