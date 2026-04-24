@@ -48,7 +48,6 @@ useEffect(() => {
   
 const [selectedSaladIngredients, setSelectedSaladIngredients] = useState(saladIngredients || []);
     
-  
 useEffect(() => {
  setSelectedSaladIngredients(saladIngredients || []);
 }, [id, saladIngredients]);
@@ -98,21 +97,18 @@ useEffect(() => {
     setSelectedSize(null); setSelectedIngredients([]); setSelectedPrice("");
   };
 
-  const addKebabToCart = () => {
-  // drink sirf WITH COMBO te required hove
+ const addKebabToCart = () => {
   if (comboType === "with" && !selectedDrink) {
     toast.error("Please select a drink 🥤")
     return
   }
+
   const drinkPrice = selectedDrink ? 2 : 0
 
   const finalPrice =
     comboType === "with"
-      ? Number(comboPrice)          // combo price (drink free)
-      : Number(paopitaprice) + drinkPrice   // drink optional
-
-  const cartIngredients =
-    isVegitarian ? selectedSaladIngredients : selectedIngredients
+      ? Number(comboPrice)
+      : Number(paopitaprice) + drinkPrice
 
   const drinkKey = selectedDrink
     ? selectedDrink.replace(/\s+/g, "_")
@@ -129,8 +125,11 @@ useEffect(() => {
       qty: 1,
       comboType,
       drink: selectedDrink || null,
+
+      // ✅ correct
       ingredients: selectedIngredients,
       saladIngredients: selectedSaladIngredients,
+
       description
     })
   )

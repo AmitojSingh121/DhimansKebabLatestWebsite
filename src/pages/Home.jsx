@@ -311,7 +311,6 @@ import image1 from "../assets/image1.jpg";
 import image2 from "../assets/image2.webp";
 import { useTranslation } from "react-i18next";
 
-
 function Home() {
   const { cate, setCate, input, showCart, setShowCart } = useContext(dataContext);
   const ITEMS_PER_PAGE = 6;

@@ -125,10 +125,8 @@ import React from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { useDispatch } from "react-redux";
 import { DecrementQty, IncrementQty, RemoveItem } from "../Redux/cartSlice";
-
 function Card2({ name, id, image, qty, price, ingredients, drink , saladIngredients}) {
   const dispatch = useDispatch();
-
   return (
     <div className="w-full p-4 border-b border-[#2a2a2a] flex gap-4 hover:bg-[#1a1a1a]/50 transition-all duration-200">
       
@@ -159,7 +157,6 @@ Salada: {saladIngredients.join(", ")}
             {ingredients.join(", ")}
           </p>
         )}
-
         {drink && (
           <p className="text-[#c9a84c]/70 text-[10px]">🥤 {drink}</p>
         )}
