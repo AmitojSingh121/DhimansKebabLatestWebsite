@@ -307,8 +307,8 @@ import { useSelector } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useState, useEffect } from "react";
-import image1 from "../assests/image1.jpg";
-import image2 from "../assests/image2.webp";
+import image1 from "../assets/image1.jpg";
+import image2 from "../assets/image2.webp";
 import { useTranslation } from "react-i18next";
 
 

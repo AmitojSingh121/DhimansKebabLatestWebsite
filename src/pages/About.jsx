@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import DhimansLogoimg from "../assests/DhimansLogoimg.webp";
+import DhimansLogoimg from "../assets/DhimansLogoimg.webp";
 import { useTranslation } from "react-i18next";
 
 // ── Gallery images – swap src for your real assets ──────────────────────────
-import image1 from "../assests/image1.jpg";
+import image1 from "../assets/image1.jpg";
 const GALLERY = [
   { src: image1, caption: "Fresh Kebabs off the grill" },
   { src: image1, caption: "Wood-fired Pizza Margherita" },

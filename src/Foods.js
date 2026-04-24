@@ -1,5 +1,5 @@
-import image1 from "./assests/image1.jpg";
-import image2 from "./assests/image2.webp";
+import image1 from "./assets/image1.jpg";
+import image2 from "./assets/image2.webp";
 export const food_items = [
 
     // Pizza Lists 

@@ -4,6 +4,7 @@ import { food_items } from "../Foods";
 import Categories from "../Categories";
 import Card from "../components/Card";
 
+
 function Menu() {
   const { cate, setCate } = useContext(dataContext);
   const ITEMS_PER_PAGE = 6;

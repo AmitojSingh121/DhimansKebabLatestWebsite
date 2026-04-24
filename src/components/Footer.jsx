@@ -62,7 +62,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { useForm, ValidationError } from "@formspree/react";
-import DhimansLogoimg from "../assests/DhimansLogoimg.webp";
+import DhimansLogoimg from "../assets/DhimansLogoimg.webp";
 import { Link } from 'react-router-dom'
 import LanguageSwitcher from "./LanguageSwitcher";   // 👈 ADD THIS
 import { useTranslation } from "react-i18next";

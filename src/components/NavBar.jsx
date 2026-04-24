@@ -62,7 +62,7 @@
 // export default NavBar;
 
 import React, { useContext, useEffect, useState } from "react";
-import DhimansLogoimg from "../assests/DhimansLogoimg.webp";
+import DhimansLogoimg from "../assets/DhimansLogoimg.webp";
 import { IoSearch } from "react-icons/io5";
 import { LuShoppingCart } from "react-icons/lu";
 import { dataContext } from "../Context/UserContext";
