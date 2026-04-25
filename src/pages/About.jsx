@@ -18,22 +18,29 @@ const STATS = [
   { value: "10K+", label: "Convidados felizes" },
   { value: "★ 4.8", label: "Média Avaliação" },
 ];
-
-
 // ── Tiny hook: animates number when element enters viewport ──────────────────
-useEffect(() => {
-  // code
-}, [threshold]);{
+function useInView(threshold = 0.2) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
+
   useEffect(() => {
     const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting) setVisible(true); },
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+        }
+      },
       { threshold }
     );
-    if (ref.current) obs.observe(ref.current);
-    return () => obs.disconnect();
-  }, []);
+
+    if (ref.current) {
+      obs.observe(ref.current);
+    }
+
+    return () => {
+      obs.disconnect();
+    };
+  }, [threshold]);
   return [ref, visible];
 }
 
