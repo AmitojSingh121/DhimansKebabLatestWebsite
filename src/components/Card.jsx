@@ -52,6 +52,7 @@ useEffect(() => {
  setSelectedSaladIngredients(saladIngredients || []);
 }, [id, saladIngredients]);
 
+
   const toggleIngredient = (item) =>
     setSelectedIngredients((prev) =>
       prev.includes(item) ? prev.filter((i) => i !== item) : [...prev, item]

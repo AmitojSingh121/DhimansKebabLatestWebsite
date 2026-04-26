@@ -28,7 +28,6 @@ function Section({ title, children }) {
 }
 
 function PrivacyPolicy() {
-    const {t} = useTranslation();
   return (
     <div className="bg-[#0a0a0a] min-h-screen text-[#f5f0e8] pt-[72px]">
 
